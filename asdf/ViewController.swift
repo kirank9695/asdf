@@ -16,6 +16,12 @@ class ViewController: UIViewController {
         print("hi")
     }
 
-
+    @IBAction func button(_ sender: UIButton) {
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(identifier: "LoginVC")
+        present(vc, animated: true, completion: nil)
+    }
+    
 }
 
